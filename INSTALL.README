@@ -1,0 +1,62 @@
+# RIKEN, Itaru Nakagawa
+# Jan.29, 2005
+
+Following setup is required to use PrimEx yeild estimate program "PhProd".
+
+1. Down load latest package from CVS repository at lnan.lns.mit.edu
+
+   lib/include
+   kinema/kin
+   kinema/xs
+   kinema/photo
+  (kinema/db) <-- database for PrimEx phasespace 
+  
+  Present make file assumes lib/include directories exists under
+  home directory as $(HOME)/lib/include
+
+
+2. The PhProd program is designed to calculate cross section/rate
+   per kinematics. Thus a useful script is available to perform the
+   calculation over the given angular range. 
+
+   kinema/script/rate.sh
+
+   By default, it produces file 
+   
+   rate_Pb_5.75GeV_normal_7days.dat
+
+   Make sure your result reproduce the sample file
+   "rate_Pb_5.75GeV_normal_7days.sample".
+
+
+3. Read kinema/photo/REAME file to have some idea what is incomplete
+   in the present program.
+
+
+
+
+
+
+
+# May 3, 2003 
+
+1. Get the latest archive kinema.tgz from 
+   http://mitbates.mit.edu/itaru/Rep/kinema.tgz
+
+2. Unarchive gzipped tar file
+
+  % tar xvzf kinema.tgz
+  % cd kinema
+
+3. Compilation and Installation. A default installation directory is
+   $(HOME)/bin. If you don't have directory, then creat directory or
+   edit BINDIR in xs/makefile and kin/makefile to wherever you want. 
+  
+  % make -C kin 
+  % make -C kin install
+  % make -C xs
+  % make -C xs install
+
+
+
+

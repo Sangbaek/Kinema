@@ -1,0 +1,25 @@
+# kinema/photo/README 
+# Jan.29, 2005
+# RIKEN I.Nakagawa
+
+
+There are several utility routines needs to be improved. 
+
+1. In function CalcCrossSection, some model choises are available,
+   but currently these models are selected manually which requires
+   to recompile the program. This better be hundled in some external
+   input technique. Read comments in the CalcCrossSection routine
+   for more detail.
+
+2. In function GetEfficiency, the database file name is hardcorded.
+   This function reads in phase space efficiency as a function of
+   pion angle theta, which are calculated using other ROOT script.
+   It needs to be again developed so that the choise of database
+   file can be controled somehow externally. Thus the GetEfficiency 
+   function is currently disabled. 
+  
+
+
+
+
+

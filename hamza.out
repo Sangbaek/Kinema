@@ -1,0 +1,20 @@
+
+ Usage: dkinema [options]
+ 
+	 -e 	 Incident Energy   in MeV/c
+	 -t 	 Lab theta_e Angle in deg 
+	 -Q 	 |Momentum Transfer| in (GeV/c)^2
+	 -W 	 CM Energy Transfer in MeV/c
+	 -p 	 Momentum Transfer Error [%]
+	 -s 	 Scatterning Angle Error [rad]
+	 -D 	 Readin errors from DKINEMA.DAT [def]: off
+	 -L 	 print [L]evel=1: plain data 
+	 -u 	 Show units of output data (used with option L)
+	 -h 	 Show this help    
+ 
+ Examples:
+ 	 dkinema -e 950 -Q 0.127 -W 1232
+ 	 dkinema -e 950 -Q 0.127 -W 1232 -L >> outfile
+ 	 dkinema -e 950 -Q 0.127 -W 1232 -L -u
+ 	 dkinema -e 950 -Q 0.127 -W 1232 -p 0.1 -s 3e-3
+ 
