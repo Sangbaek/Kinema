@@ -7,7 +7,6 @@
 #include "calc.h"
 #include "kinema.h"
 #include "const.h"
-#include "Phys.h"
 #include "target.h"
 
 using namespace std;

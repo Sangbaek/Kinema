@@ -1,13 +1,10 @@
 
 CXX    = g++ -I../lib/include -I../XSisolator
 
-XSDIR = ../XSisolator
 
 SRC    = kinema.cc dkinema.cc calc.cc Lab2CM.cc relativistic.cc xs.cc Math.cc gkinema.cc gkinema2pi.cc\
-	$(XSDIR)/Phys.cc
 
 OBJ    = calc.o Lab2CM.o relativistic.o xs.o Math.o \
-	$(XSDIR)/Phys.o
 
 INCLUDE= $(HOME)/include
 FLAG   = -I$(INCLUDE) -Wall

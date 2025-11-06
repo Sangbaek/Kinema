@@ -7,7 +7,6 @@
 #include "Math.h"
 #include "Lab2CM.h"
 #include "relativistic.h"
-#include "Phys.h"
 
 using namespace std;
 
