@@ -13,15 +13,20 @@ make
 
 If we want to reproduce the Kin-1 of Spring 2026 plan for VCS experiment,
 which is the following.
-$$
-Q^2 = .05 \mathrm{GeV}^2/c^2\\
-p_{e'} = 1055.28 \mathrm{MeV}/c\\
-\theta_{e'} = 10.48^{\circ}\\
-p_{p'} = 493.93 \mathrm{MeV}/c\\
-\theta_{p'} = 56.01^{\circ}\\	
-\theta_{gg} = 110^{\circ}\\	
-\phi = 0
-$$
+
+$$Q^2 = .05~\mathrm{GeV}^2/c^2$$
+
+$$p_{e'} = 1055.28~\mathrm{MeV}/c$$
+
+$$\theta_{e'} = 10.48^{\circ}$$
+
+$$p_{p'} = 493.93~\mathrm{MeV}/c$$
+
+$$\theta_{p'} = 56.01^{\circ}$$
+
+$$\theta_{gg} = 110^{\circ}$$
+
+$$\phi = 0$$
 
 Then, first, run the kinema with only electron side, i.e.,
 
@@ -48,7 +53,7 @@ This will print out the angle of virtual photon to be 26.7275 degrees, like the 
 
 Then, consider the SHMS range 13.6 to 56.3 degrees.
 
-When $$\theta_{p'} = 56.01^{\circ}$$, $$theta_{pq}= 56.01-26.7275^{\circ}\sim29.3^{\circ}$$.
+When $$\theta_{p'} = 56.01^{\circ}$$, $$\theta_{pq}= 56.01-26.7275^{\circ}\sim29.3^{\circ}$$.
 
 Then,
 
@@ -61,6 +66,6 @@ H    938.27  122.02  493.83   29.30000   34.60  257.13   70.031     4.70
 H      0.00  241.70  241.70  -90.87616  257.13  257.13  109.969     0.88
 ```
 
-and $$p_{p'} = 493.83$$ MeV/$$c$$ well agrees with the kinematics setting within the numerical uncertainties.
+and $$p_{p'} = 493.83~\mathrm{MeV}/c$$ well agrees with the kinematics setting within the numerical uncertainties.
 
-Take 109.969 for the $\theta_{gg}.
+Take $$109.969\sim110^{\circ}$$ for the $$\theta_{gg}$$.
