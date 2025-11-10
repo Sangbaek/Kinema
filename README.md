@@ -53,19 +53,24 @@ This will print out the angle of virtual photon to be 26.7275 degrees, like the 
 
 Then, consider the SHMS range 13.6 to 56.3 degrees.
 
-When $$\theta_{p'} = 56.01^{\circ}$$, $$\theta_{pq}= 56.01-26.7275^{\circ}\sim29.3^{\circ}$$.
+When $$\theta_{p'} = 56.01^{\circ}$$, $$\theta_{pq}= -56.01-(-26.7275)^{\circ}\sim-29.3^{\circ}$$.
 
 Then,
 
-`./kinema -P -e 1419 -Q 0.05 -W 1230 -T 29.3 -G`
+`./kinema -P -e 1419 -Q 0.05 -W 1230 -T -29.3 -G`
 
 will print out 
 
 ```
-H    938.27  122.02  493.83   29.30000   34.60  257.13   70.031     4.70
-H      0.00  241.70  241.70  -90.87616  257.13  257.13  109.969     0.88
+   H    938.27  122.02  493.83  -29.30000   34.60  257.13   70.031     4.70
+   H      0.00  241.70  241.70 -269.12384  257.13  257.13  109.969     0.88
+   L    938.27    3.29   78.65  -29.30000   34.60  257.13  171.391    -0.12
+   L      0.00  360.43  360.43    6.13015  257.13  257.13    8.609     1.96
+tp0 : 56.0275 tp180: -2.57253
 ```
 
 and $$p_{p'} = 493.83~\mathrm{MeV}/c$$ well agrees with the kinematics setting within the numerical uncertainties.
 
 Take $$109.969\sim110^{\circ}$$ for the $$\theta_{gg}$$.
+
+Now the phi=0 has proton angle 56 deg as desired, phi=180 deg case is out of SHMS reach.

@@ -61,7 +61,7 @@ main(int argc, char *argv[]) {
   //int    Z   = 82;    
   //double A   = 207.19; // 208Pb
   double M1  = MASS_PI0;
-  double Mt  = MassFormula(A,Z);
+  double Mt  = MASS_PROTON;//MassFormula(A,Z);
   double M2  = M1; 
 
   while (EOF != (opt = getopt(argc, argv, "h?XCspt:e:T:"))) {
@@ -97,7 +97,7 @@ main(int argc, char *argv[]) {
   }
 
   // Get target and residual nucleus mass
-  Mt = M2 = MassFormula(A,Z);
+  Mt = M2 = MASS_PROTON; //MassFormula(A,Z);
   Hadron PhProd;
 
   // calculate kinematics in Laboratory Frame

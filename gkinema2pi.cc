@@ -8,7 +8,6 @@
 #include "calc.h"
 #include "kinema.h"
 #include "const.h"
-#include "Phys.h"
 #include "target.h"
 
 using namespace std;
@@ -61,7 +60,7 @@ main(int argc, char *argv[]) {
   double E1  = 1*G2M;   // 1[GeV/c]
   double A   = 207.19; // 208Pb
   int    Z   = 82;    
-  double Mt  = MassFormula(A,Z);
+  double Mt  = MASS_PROTON; //MassFormula(A,Z);
   double M1  = MASS_PI0;
   double M2  = M1; 
   double M3  = Mt;
@@ -105,7 +104,7 @@ main(int argc, char *argv[]) {
   }
 
   // Get target and residual nucleus mass
-  M3 = Mt = MassFormula(A,Z);
+  M3 = Mt = MASS_PROTON; // MassFormula(A,Z);
   Hadron PhProd;
 
   // calculate kinematics in Laboratory Frame
