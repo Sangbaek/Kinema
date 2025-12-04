@@ -51,7 +51,7 @@ This will print out the angle of virtual photon to be 26.7275 degrees, like the 
  Q^2      = -0.05 [GeV/c]^2     1.28409 [fm^-2]
  ```
 
-Then, consider the SHMS range 13.6 to 56.3 degrees.
+Then, consider the HMS range 13.6 to 56.3 degrees.
 
 When $$\theta_{p'} = 56.01^{\circ}$$, $$\theta_{pq}= -56.01-(-26.7275)^{\circ}\sim-29.3^{\circ}$$.
 
