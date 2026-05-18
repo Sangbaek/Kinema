@@ -31,7 +31,7 @@ def run_kinema_proton(E_beam, Q2, W, thetapq):
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Run Kinema for proton kinematics.")
   parser.add_argument("-e" , "--E_beam" , type=float, help="Beam energy in MeV")
-  parser.add_argument("-Q"     , "--Q2"     , type=float, help="Momentum transfer squared in (MeV/c)^2")
+  parser.add_argument("-Q"     , "--Q2"     , type=float, help="Momentum transfer squared in (GeV/c)^2")
   parser.add_argument("-W"      , "--W"      , type=float, help="Invariant mass in MeV")
   parser.add_argument("-C", "--thetapq", type=float, help="Angle between proton and momentum transfer in degrees")
 
